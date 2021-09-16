@@ -1,0 +1,77 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "kpi dashboard helper",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS"
+                        }
+                    ],
+                    "samples": [
+                        "tell about {Item}",
+                        "tell about {Item} in wfm",
+                        "get {Item}",
+                        "{Item}",
+                        "what is {Item} in wfm"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ITEMS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "percentage of calls blocked"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "average time in queue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "average abandonment rate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "service level"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "average speed of answer"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
